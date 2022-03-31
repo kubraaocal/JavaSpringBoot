@@ -33,6 +33,7 @@ public class WorkerServiceImp implements WorkerService{
     }
 
     @Override
+    @Transactional
     public WorkerViewDTO createWorker(WorkerCreateDTO workerCreateDTO) {
         final Worker worker=workerRepository.save(new Worker(workerCreateDTO.getFirstName(),
                 workerCreateDTO.getLastName(), workerCreateDTO.getCompany()));

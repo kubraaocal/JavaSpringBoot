@@ -7,7 +7,7 @@ import lombok.Getter;
 import java.io.Serializable;
 
 @Getter
-public class CompanyViewDTO implements Serializable {
+public final class CompanyViewDTO implements Serializable {
     private static  final long serialVersionUID = 1L;
 
     private final String companyName;
